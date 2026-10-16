@@ -1,6 +1,6 @@
 # TASKFLOW — Teslim Kontrolü ve Eksik Analizi
 
-16 Ekim 2026 · Yerel teslim dosyaları hazır; GitHub yayını onay bekliyor.
+16 Ekim 2026 · Teslim dosyaları public GitHub reposunda yayınlandı. Teslim bağlantısı: [sbtugba/taskflow-api](https://github.com/sbtugba/taskflow-api).
 
 ## Teslim dosyaları
 
@@ -41,7 +41,7 @@ Routes, controllers, services, middleware ve data ayrımı korunuyor. Express 5 
 
 Package açıklaması güncellendi, mevcut test için `npm test` komutu eklendi; modül sistemi ve Node.js sürüm şartı korundu. Boş servis klasörünü tutmak için kullanılan, artık gereksiz `.gitkeep` kaldırıldı. `.gitignore` bağımlılıkları, npm önbelleğini, gerçek ortam dosyalarını, logları, geçici veri dosyalarını, yedekleri ve yerel editör ayarlarını dışlar. `.env.example` ve boş başlangıç `tasks.json` teslimde tutulur.
 
-Yerel node_modules ve npm önbelleği silinmedi; Git gönderimine dahil edilmemelidir. Klasör henüz Git deposu olmadığı için `git status` çalışmadı; izlenen dosyalar/geçmiş veya remote incelenemedi. Repo kurulunca ilk commit öncesi staging listesi tekrar kontrol edilmelidir. Kaynak klasörün tamamını ZIP yapmak bu dışlamaları otomatik uygulamaz.
+Yerel node_modules ve npm önbelleği silinmedi; .gitignore ile Git gönderiminden dışlandı. Git deposu oluşturuldu, commit dosya listesi kontrol edildi ve main dalı origin/main üzerine push edildi. .env ve bağımlılık/önbellek dizinleri commit dışında tutuldu. Kaynak klasörün tamamını ZIP yapmak bu dışlamaları otomatik uygulamaz.
 
 ## 100 puanlık değerlendirme ölçütleri
 
@@ -51,12 +51,12 @@ Yerel node_modules ve npm önbelleği silinmedi; Git gönderimine dahil edilmeme
 | Routing yapısı | 15 | Health ve Task router/controller ayrımı mevcut; kimlikli yollar tutarlı |
 | Temel middleware (logger) | 15 | Tüm isteklerde method, endpoint, zaman damgası; gerçek çıktı doğrulandı |
 | Kod kalitesi | 15 | ES Modules, async/await, katmanlar, ortak hata biçimi; sözdizimi kontrolleri geçti |
-| Temel dokümantasyon | 15 | Kısa tanıtım, README, kurulum ve endpoint bilgileri tamam; yayınlanınca gerçek repo URL'si eklenebilir |
+| Temel dokümantasyon | 15 | Kısa tanıtım, README, kurulum ve endpoint bilgileri tamam; public teslim bağlantısı eklendi |
 | Postman test süreçleri | 10 | Kullanıcının doğruladığı altı orijinal görüntü mevcut |
 | Toplam değerlendirilen ağırlık | 100 | Tüm kriterler için kanıt mevcut; bu tablo verilmiş veya garanti edilmiş not değildir |
 
 ## Kalan işler ve sınırlar
 
-Zorunlu yerel içerikte bilinen işlevsel eksik saptanmadı. Teslim formatının kalan adımları tek GitHub reposunu oluşturmak, dosya listesini kontrol ederek commit/push yapmak ve public görünürlüğü doğrulamaktır. Kullanıcı talebi gereği bu işlemler yapılmadı; onay bekleniyor.
+Zorunlu içerikte bilinen işlevsel eksik saptanmadı. Git deposu oluşturma, dosya listesini kontrol etme ve commit/push işlemleri tamamlandı. GitHub API üzerinden kimlik doğrulamasız erişimde visibility: public ve private: false doğrulandı. Teslim bağlantısı: [sbtugba/taskflow-api](https://github.com/sbtugba/taskflow-api).
 
 Veri saklama tek süreçli eğitim projesi içindir; birden fazla süreçle aynı dosyaya yazma veya tam yedekleme garantisi yoktur. Tanıtımın sabit sayfa düzenli çıktısı oluşturulmadı. İsteğe bağlı filtreleme, arama, sayfalama, gelişmiş validation middleware ve raporlama yokluğu zorunlu teslim eksiği değildir.

@@ -1,10 +1,10 @@
 # TASKFLOW
 
-Node.js, Express.js ve JavaScript ile geliştirilen REST API. Geliştirme ve kullanıcı tarafından doğrulanan manuel Postman testleri tamamlandı. GitHub teslimi onay bekliyor.
+Node.js, Express.js ve JavaScript ile geliştirilen REST API. Geliştirme ve kullanıcı tarafından doğrulanan manuel Postman testleri tamamlandı. Proje GitHub’da public olarak yayınlanmıştır. Teslim bağlantısı: [sbtugba/taskflow-api](https://github.com/sbtugba/taskflow-api).
 
 ## Kurulum ve çalıştırma
 
-Node.js 24 LTS ve npm gerekir. Repo yayınlandıktan sonra projeyi ZIP olarak indirin veya klonlayın; package.json bulunan klasörde terminal açın. Henüz yayınlanmış repo URL’si yoktur. Proje klasöründe:
+Node.js 24 LTS ve npm gerekir. Public [sbtugba/taskflow-api](https://github.com/sbtugba/taskflow-api) reposundan projeyi ZIP olarak indirin veya git clone https://github.com/sbtugba/taskflow-api.git komutuyla klonlayın; taskflow-api klasörüne geçip package.json bulunan konumda terminal açın. Proje klasöründe:
 
 ```powershell
 npm ci
@@ -32,7 +32,7 @@ ES Modules kullanılır. `src/app.js` Express yapılandırmasını dışa aktar�
 
 Task yolları: POST/GET `/tasks`, GET/PUT/DELETE `/tasks/:id`. PUT gönderilmeyen alanları korur. Durumlar: `pending`, `in-progress`, `completed`. Öncelikler: `low`, `medium`, `high`. `/api/health`, Aşama 2 talebiyle eklenen bağımsız altyapı yoludur. Filtreleme, raporlama ve validation middleware eklenmemiştir.
 
-Analiz ve tasarım belgeleri [docs/](docs/) altındadır. Public GitHub reposu ve push kullanıcı onayı bekler.
+Analiz ve tasarım belgeleri [docs/](docs/) altındadır. Kaynak kodlar ve teslim belgeleri public [sbtugba/taskflow-api](https://github.com/sbtugba/taskflow-api) reposunda yayınlanmıştır.
 
 ## Otomatik doğrulama
 
