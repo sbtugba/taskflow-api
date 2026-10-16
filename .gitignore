@@ -1,0 +1,14 @@
+node_modules/
+.npm-cache/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+.DS_Store
+Thumbs.db
+src/data/*.tmp
+*.bak
+*.backup
+.vscode/
+.idea/
